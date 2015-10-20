@@ -10,8 +10,7 @@ var countries = {
 	uk: 16,
 	fiji: 17,
 	guam: 16
-}
-console.log(countries.usa.valueOf());
+};
 
 $('#submit').on('submit', function(e) {
 	e.preventDefault();
@@ -22,7 +21,6 @@ $('#submit').on('submit', function(e) {
 			canDriveIn.push(key);
 		}
 	}
-	console.log(canDriveIn);
 	var canIDrive = '';
 	age > 15 ? canIDrive = 'You are old enough to drive in: ' : canIDrive = 'You are not old enough to drive.';
 	age < 0 || isNaN(age) ? canIDrive = 'Pleae enter a valid age' : '';
